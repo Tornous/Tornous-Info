@@ -1,35 +1,44 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- Title of the webpage -->
     <title>Tornous info. | Tornous</title>
+    <!-- Favicon for the webpage -->
     <link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA/4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABEQAAAAAAAAAQAAAAAAAAABAAAAAAAAAAEAAAAAAAAAAQAAAAAAAAABAAAAAAAAAAEAAAAAAAAAARAAAAAAAAAAAAAAAAAAAAEQAAAAAAAAARAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wAA//8AAPx/AAD+/wAA/v8AAP7/AAD+/wAA/v8AAP7/AAD+fwAA//8AAP5/AAD+fwAA//8AAP//AAD//wAA" rel="icon" type="image/x-icon" />
+    <!-- JavaScript function to redirect to the home page -->
     <script>
       function Returntothepokeball() {
         location.replace("https://tornous.github.io")
       }
     </script>
+    <!-- JavaScript function to redirect to the employee's page -->
     <script>
       function Employee(Person) {
         location.replace("https://tornous.github.io/people/" + Person)
       }
     </script>
   </head>
-  <style>
-    body {
-      background-image: url('https://share.sketchpad.app/23/75e-7e2e-9aeb45.png');
-      background-repeat: no-repeat;
-      background-attachment: fixed; 
-      background-size: 100% 100%;
-    }
-    * {
-    cursor: crosshair;
-    }
-  </style>
   <body>
+    <!-- CSS styles for the webpage -->
+    <style>
+      /* Setting the background image for the body */
+      body {
+        background-image: url('https://share.sketchpad.app/23/75e-7e2e-9aeb45.png');
+        background-repeat: no-repeat;
+        background-attachment: fixed; 
+        background-size: 100% 100%;
+      }
+      /* Setting the cursor style for all elements */
+      * {
+        cursor: crosshair;
+      }
+    </style>
+    <!-- Button to return to the home page -->
     <button onclick="Returntothepokeball()">Home</button>
+    <!-- Information about Tornous -->
     <h1>Tornous info</h1>
     <h2>Members</h2>
-    <button onclick="Employee("Lucas")">Lucas</button>
+    <button onclick='Employee("Lucas")'>Lucas</button>
     <h2>Us</h2>
     <p></p>
   </body>
