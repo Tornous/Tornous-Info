@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <!-- Title of the webpage -->
+    <!-- Sets the title of the webpage -->
     <title>Tornous info. | Tornous</title>
-    <!-- Favicon for the webpage -->
+    <!-- Sets the favicon for the webpage -->
     <link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA/4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABEQAAAAAAAAAQAAAAAAAAABAAAAAAAAAAEAAAAAAAAAAQAAAAAAAAABAAAAAAAAAAEAAAAAAAAAARAAAAAAAAAAAAAAAAAAAAEQAAAAAAAAARAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wAA//8AAPx/AAD+/wAA/v8AAP7/AAD+/wAA/v8AAP7/AAD+fwAA//8AAP5/AAD+fwAA//8AAP//AAD//wAA" rel="icon" type="image/x-icon" />
-    <!-- JavaScript function to redirect to the home page -->
+    <!-- JavaScript function to redirect the user to the home page -->
     <script>
       function Returntothepokeball() {
         location.replace("https://tornous.github.io")
       }
     </script>
-    <!-- Javascript to intigrate Clarity made by Microsoft-->
+    <!-- JavaScript to integrate Clarity, a user behavior analytics tool by Microsoft -->
     <script type="text/javascript">
       (function(c,l,a,r,i,t,y){
           c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
@@ -19,12 +19,13 @@
           y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
       })(window, document, "clarity", "script", "jq0i7r6vp9");
   </script>
-    <!-- JavaScript function to redirect to the employee's page -->
+    <!-- JavaScript function to redirect to a specific person's page -->
     <script>
-      function Employee(Person) {
-        location.replace("https://tornous.github.io/People/" + Person)
+      function Person(Person, type) {
+        location.replace("https://tornous.github.io/Tornous-Info/People/" + type + "/" + Person)
       }
     </script>
+    <!-- JavaScript function to redirect to the stream page -->
     <script>
       function stream() {
         location.replace ("https://tornous.github.io/stream")
@@ -34,14 +35,14 @@
   <body>
     <!-- CSS styles for the webpage -->
     <style>
-      /* Setting the background image for the body */
+      /* Sets the background image for the body */
       body {
         background-image: url('https://share.sketchpad.app/23/75e-7e2e-9aeb45.png');
         background-repeat: no-repeat;
         background-attachment: fixed; 
         background-size: 100% 100%;
       }
-      /* Setting the cursor style for all elements */
+      /* Sets the cursor style for all elements */
       * {
         cursor: crosshair;
       }
@@ -51,8 +52,13 @@
     <!-- Information about Tornous -->
     <h1>Tornous info</h1>
     <h2>Members</h2>
-    <button onclick='Employee("Lucas")'>Lucas</button>
+    <h3>Employees</h3>
+    <button onclick='Person("Lucas", "Employees")'>Lucas</button>
+    <button onclick='Person("Name", "Employees")'>
+    <h3>Community</h3>
+    <button onclick='Person("Name", "Community")'>
     <h2>Us</h2>
+    <!-- Link to redirect to the live streams page -->
     <p><a onclick="stream()">Go to our live streams</a></p>
   </body>
 </html>
