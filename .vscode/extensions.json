@@ -1,0 +1,8 @@
+{
+    "recommendations": [
+        "rid9.datetime",
+        "wscats.html-snippets",
+        "davidanson.vscode-markdownlint",
+        "github.copilot"
+    ]
+}

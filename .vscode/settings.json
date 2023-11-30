@@ -1,0 +1,10 @@
+{
+    "editor.cursorStyle": "block",
+    "editor.defaultFormatter": "vscode.html-language-features",
+    "dateTime.showMonth": true,
+    "dateTime.showAMPM": false,
+    "dateTime.showDayOfMonth": true,
+    "dateTime.showSeconds": true,
+    "html.autoClosingTags": false,
+    "html.trace.server": "messages"
+}
